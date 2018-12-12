@@ -82,8 +82,11 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER':'postgres',
+        'PASSWORD':'2gilbert@myway.com',
+        'HOST':'localhost'
     }
 }
 
@@ -140,11 +143,6 @@ MESSAGE_TAGS = {
 }
 #Email config
 
-EMAIL_HOST ='smtp.gmail.com'
-EMAIL_PORT =587
-EMAIL_HOST_USER='2mwayungi@gmail.com'
-EMAIL_HOST_PASSWORD=''
-EMAIL_USE_TLS=True
 
 
 try:
