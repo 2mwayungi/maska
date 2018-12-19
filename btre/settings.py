@@ -140,7 +140,7 @@ MESSAGE_TAGS = {
 }
 #Email config
 
-
+FILE_UPLOAD_PERMISSIONS=0o640 
 
 try:
     from .local_settings import *
